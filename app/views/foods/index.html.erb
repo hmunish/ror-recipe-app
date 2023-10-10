@@ -1,2 +1,43 @@
-<h1>Foods#index</h1>
-<p>Find me in app/views/foods/index.html.erb</p>
+<div class="foods-container">
+  <h1>Foods</h1>
+
+  <div class="add-food-btn">
+    <%= link_to "Add food", new_user_food_path %>
+  </div>
+  <div class="foods">
+    <% if @foods.empty? %>
+      <p>No foods available.</p>
+    <% else %>
+      <table class="foods-table">
+        <thead class="table-head">
+          <tr class="food-head">
+            <th>Food</th>
+            <th>quantity</th>
+            <th>Measurement Unit</th>
+            <th>Unit Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @foods.each do |food| %>
+            <tr class="custom-table-row">
+              <td class="food-names">
+                <%= link_to food.name, user_food_url(current_user.id, food.id) %>
+              </td>
+              <td><%= food.quantity %></td>
+              <td><%= food.measurement_unit %></td>
+              <td><span>$<%= food.price %></td></span>
+              <td>
+                <%= button_to "Delete", 
+                  user_food_path(current_user.id, food.id), method: :delete,
+                  data: { confirm: "Delete food?" } %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+
+  <%= link_to "Go to Home", users_path(current_user) %>
+</div>
