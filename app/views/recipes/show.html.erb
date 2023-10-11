@@ -23,9 +23,16 @@
             <td><%= food.measurement_unit %></td>
             <td><span>$<%= food.price %></td></span>
             <td>
-            <%= button_to "Delete",
+            <%=
+                button_to "Modify",
                 user_food_path(current_user.id, food.id), method: :delete,
-                data: { confirm: "Delete food?" } %>
+                data: { confirm: "Delete food?" }
+            %>
+            <%=
+                button_to "Delete",
+                user_food_path(current_user.id, food.id), method: :delete,
+                data: { confirm: "Delete food?" }
+            %>
             </td>
         </tr>
     <% end %>
