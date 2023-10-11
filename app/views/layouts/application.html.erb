@@ -11,8 +11,17 @@
 
   <body>
   <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-
+  <p class="alert"><%= alert %></p>
+    <nav>
+    <div class="nav-container">
+    <span><%= link_to "Users Dashboard", users_path %></span>
+    <span><%= link_to "Foods List", user_foods_path(current_user) %></span>
+    <span><%= link_to "Recipe List", user_recipes_path(current_user) %></span>
+    <span><%= link_to "Recipe Details", user_recipes_path(current_user) %></span>
+    <span><%= link_to "Public Recipes", user_public_recipes_path(current_user) %></span>
+    <span><%= link_to "Shopping List", user_shopping_list_index_path(current_user) %></span>
+    </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
