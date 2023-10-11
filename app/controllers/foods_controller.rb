@@ -6,10 +6,6 @@ class FoodsController < ApplicationController
     @foods = @user.foods.all
   end
 
-  def new
-    @food = Food.new
-  end
-
   def create
     @user = current_user
     @food = @user.foods.build(post_food)
