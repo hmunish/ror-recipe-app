@@ -7,9 +7,11 @@ Rails.application.routes.draw do
   devise_for :users
   root "users#index"
   resources :users, only: [:index, :show] do
-    resources :recipes
+    resources :recipes do
+      patch 'toggle'
+    end
     resources :foods
-    resources :recipe_foods, except: %i[edit update]
+    resources :recipe_foods, except: %i[edit]
     resources :public_recipes, only: [:index]
     resources :shopping_list, only: [:index, :show]
   end

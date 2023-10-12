@@ -38,7 +38,7 @@ class RecipesController < ApplicationController
     end
   end
 
-  def toogle
+  def update
     @recipe = Recipe.find_by_id(params[:id])
     @recipe.public = !@recipe.public
     if @recipe.save
