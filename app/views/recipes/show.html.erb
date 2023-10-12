@@ -7,7 +7,11 @@
             <p>Cooking time: <%= @recipe.cooking_time %>h</p>
             <p>Steps go here ...</p>
         </div>
-        <button>Public</button>
+        <%= form_with(model: @recipe, url: user_recipe_url(current_user.id, @recipe.id), method: :patch, local: true) do |f| %>
+            <%= f.hidden_field :active, value: @recipe.public ? 0 : 1 %>
+            <%= f.submit @recipe.public ? 'Public' : 'Private', class: 'btn btn-primary' %>
+        <% end %>
+
     </article>
     <div>
         <button>Generate Shopping List</button>
