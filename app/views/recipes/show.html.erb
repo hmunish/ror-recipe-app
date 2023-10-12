@@ -14,8 +14,8 @@
 
     </article>
     <div>
-        <button>Generate Shopping List</button>
-        <button>Add ingredient</button>
+        <%= link_to 'Generate Shopping list', user_shopping_list_index_path(current_user)%>
+        <%= link_to 'Add ingredient', user_recipe_food_path(current_user, @recipe)%>
     </div>
 
     <% @foods.each do |food| %>

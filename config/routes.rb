@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       patch 'toggle'
     end
     resources :foods
-    resources :recipe_foods, except: %i[edit update]
+    resources :recipe_foods, except: %i[edit]
     resources :public_recipes, only: [:index]
     resources :shopping_list, only: [:index, :show]
   end
