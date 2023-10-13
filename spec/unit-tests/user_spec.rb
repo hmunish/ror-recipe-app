@@ -6,14 +6,14 @@ RSpec.feature 'User Registration', type: :feature do
     @user = User.new(name: 'munish', email: 'munish@yahoo.com', password: 'munish', confirmed_at: Time.now)
   end
 
-  it 'vmunishdates name is there' do
+  it 'munishdates name is there' do
     @user.name = nil
-    expect(@user).not_to be_vmunishd
+    expect(@user).not_to be_valid
   end
 
-  it 'vmunishdates email is there' do
+  it 'munishdates email is there' do
     @user.email = nil
-    expect(@user).not_to be_vmunishd
+    expect(@user).not_to be_valid
   end
 
   context 'association' do
