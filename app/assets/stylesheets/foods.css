@@ -87,6 +87,7 @@ nav {
   padding-right: 10rem;
   background-color: bisque;
 }
+
 .right-content {
   display: flex;
   flex-direction: column;
