@@ -3,7 +3,7 @@
     <%= link_to 'create recipe', new_user_recipe_path(current_user.id)%>
     <ul>
         <% @recipes.each do |recipe| %>
-            <li>
+            <li class="recipes-list">
                 <%= link_to recipe.name, user_recipe_url(current_user.id, recipe.id) %>
                 <% if recipe.user_id == current_user.id%>
                     <%= button_to "delete", user_recipe_url(current_user.id, recipe.id) %>

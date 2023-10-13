@@ -1,21 +1,21 @@
 <div class="foods-container">
-  <h1>Foods</h1>
+  <h1>All Food List</h1>
 
   <div class="add-food-btn">
     <%= link_to "Add food", new_user_food_path %>
   </div>
   <div class="foods">
     <% if @foods.empty? %>
-      <p>No foods available.</p>
+      <p>No food added, please add food to view here.</p>
     <% else %>
       <table class="foods-table">
         <thead class="table-head">
           <tr class="food-head">
             <th>Food</th>
-            <th>quantity</th>
-            <th>Measurement Unit</th>
+            <th>Quantity</th>
+            <th>Measurement unit</th>
             <th>Unit Price</th>
-            <th>Actions</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
