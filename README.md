@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Live demo not available yet.
+Live demo link will be added here
 
 <!-- - [Live Demo Link](https://google.com) -->
 
