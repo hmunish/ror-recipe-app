@@ -1,3 +1,4 @@
+<div class="form-food">
 <%= form_with(model: recipe, url: user_recipes_path) do |form| %>
   <% if recipe.errors.any? %>
     <div style="color: red">
@@ -11,22 +12,22 @@
     </div>
   <% end %>
 
-    <div class="mb-3">
+    <div class="mb-3 label">
     <%= form.label :name, class: 'form-label' %>
     <%= form.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-3 label">
     <%= form.label :preparation_time, class: 'form-label'  %>
     <%= form.number_field :preparation_time, class: 'form-control' %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-3 label">
     <%= form.label :cooking_time, class: 'form-label'  %>
     <%= form.number_field :cooking_time, class: 'form-control' %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-3 label">
     <%= form.label :description, class: 'form-label' %>
     <%= form.text_area :description, class: 'form-control' %>
   </div>
@@ -37,6 +38,7 @@
   </div>
 
   <div class="mt-3">
-    <%= form.submit class: 'btn btn-primary' %>
+    <%= form.submit class: 'btn btn-primary new-food-btn' %>
   </div>
 <% end %>
+</div>

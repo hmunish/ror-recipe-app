@@ -100,17 +100,28 @@ div.add-food-btn {
   padding: 15px 0;
 }
 
-.add-food-btn > a {
+.add-food-btn > a,
+.create-recipe {
   padding: 7px;
   background: limegreen;
   text-decoration: none;
+  text-transform: capitalize;
   color: #fff;
-  margin-right: 25%;
   border-radius: 7px;
 }
 
+.create-recipe {
+  margin-right: 0;
+}
+
+.recipes-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
 .recipes-list {
-  width: 50%;
   margin: auto;
   padding: 25px;
   border: 1px solid #000;
