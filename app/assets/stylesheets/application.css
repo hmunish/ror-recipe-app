@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.set-width {
+  width: 30rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-switch {
+  background-color: green;
+  position: relative;
+  cursor: pointer;
+  width: 60px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+.toggle-switch.active {
+  background-color: green;
+}
+
+.toggle-switch::before {
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s ease;
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 15px;
+  background-color: rgb(241, 237, 237);
+}
+
+.toggle-switch.active::before {
+  transform: translateX(20px);
+  width: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(214, 252, 252);
+}
+
+.details-table {
+  border-collapse: collapse;
+  margin: 10px;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.details-table th,
+.table td {
+  border: 1px solid #afabab;
+}
+
+.data-details {
+  border: 1px solid black;
+}
+
+.heading-name th {
+  padding-left: 10px;
+  text-align: left;
+  padding-block: 1rem;
+  border-right: 1px solid black;
+}
+
+.card-body-right {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add-recipe {
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: bisque;
+}
+
+.quantity-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-left: -10vw;
+  padding: 10px;
+  gap: 5px;
+}
+
+.quantity-input {
+  width: 10%;
+}
+
+.delete-fd,
+.modify-button {
+  width: 60px;
+  height: 30px;
+  background-color: blanchedalmond;
+}
+
+.data-details td {
+  text-align: left;
+  padding: 1rem;
+  border-right: 1px solid black;
+}
+
+.data-details:nth-child(even) {
+  background-color: #afabab;
+}
+
+.wrapper-card {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  border: 1px solid black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 20rem;
+  background-color: bisque;
+}
+
+.card-body-left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}

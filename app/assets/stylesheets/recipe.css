@@ -1,0 +1,10 @@
+h2 {
+  text-align: left;
+}
+
+.recipe-container {
+  width: 50vw;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 5rem;
+}

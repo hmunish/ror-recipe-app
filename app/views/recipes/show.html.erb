@@ -1,0 +1,82 @@
+<%= stylesheet_link_tag "recipe.css" %>
+  <div class="wrapper-container">
+    <h1>Recipe <%= @recipe.name %>
+    </h1>
+    <div class="recipe-container">
+      <div>
+        <h4>Preparation Time: <%= @recipe.preparation_time %>
+        </h4>
+        <h4>Cooking Time: <%= @recipe.cooking_time %>
+        </h4>
+        <h4>Steps go there...</h4>
+      </div>
+      <div class="table-cont">
+    
+      <%= form_for @recipe, url: public_toggle_user_recipe_path(@recipe), method: :patch, remote: true, authenticity_token: true, html: { class: 'toggle-form' } do |f| %>
+        <div class="slider-container">
+        <span class="switch-label">
+        <%= @recipe.public ? "Public" : "Private" %>
+        </span>
+        <label class="switch">
+          <%= f.check_box :public, { class: "toggle-switch" }, 0, 1 %>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <%= f.hidden_field :public, value: @recipe.public ? 0 : 1 %>
+      <%= f.submit 'Toggle', class: 'hidden-submit', style: 'display: none;' %>
+    <% end %>
+    </div>
+    </div>
+
+      <div class="shop-generate">
+    <div class="shop1">
+      <%= link_to "Generate Shopping List", user_shopping_list_index_path(@recipe.user, @recipe), class: "generate" %>
+    </div>
+    <div class="generate1">
+    <% if can? :update, @recipe%>
+      <div class="shop1">
+        <%= link_to "Add Ingredient", new_user_recipe_food_path(recipe_id: @recipe.id, user_id: @recipe.user.id), class: "shop" %>
+      </div>
+    <%end%>
+    </div>
+  </div>
+  <div class="table-cont">
+    <table class="details-table">
+      <% if @recipe.recipe_foods.any? %>
+         <thead class="details-head">
+             <tr class="heading-name">
+             <th>Food</th>
+             <th>Quantity</th>
+             <th>Value</th>
+             <th>Action</th>
+             </tr>
+         </thead>
+     
+         <tbody>
+         <% @recipe.recipe_foods.each do |fd|%>
+         <tr class="data-details">
+           <td><%= fd.food.name%></th>
+           <td><%= fd.quantity%></td>
+           <td>$<%= (fd.quantity.to_f * fd.food.price.to_f).round(2) %></td>
+           <td>
+           <% if can? :manage, @recipe %>
+            <div class="delete-div">
+             <%= button_to "Delete", user_recipe_food_path(@recipe.user, fd.id), method: :delete, data: { confirm: "Are you sure?" }, class: "delete-fd" %>
+             <%= form_with(model: fd, url: modify_user_recipe_food_path(@recipe.user, fd.id), method: :patch, remote: true, authenticity_token: true, html: { class: 'modify-form' }) do |f| %>
+              <div class="quantity-container">
+                <%= f.number_field :quantity, value: fd.quantity, class: "quantity-input" %>
+             
+              <%= f.submit 'Modify', class: 'modify-button' %>
+              </div>
+            <% end %>
+           <%end%>
+           </div>
+           </td>
+         </tr>
+       
+         </tbody>
+         <%end%>
+       <%end%>
+     </table>
+     </div>
+  </div>

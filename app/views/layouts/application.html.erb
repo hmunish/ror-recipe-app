@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodsApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.6.0.min.js' %>
+
+    <%= javascript_include_tag 'recipes' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "foods" %>
+    <%= stylesheet_link_tag "details" %>
+    <%= stylesheet_link_tag "shopping" %>
+
+  </head>
+
+  <body>
+      <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+       <nav>
+       <div class="nav-container">
+       <% if current_user %>
+       <span><%= link_to "Users Dashboard", users_path %></span>
+       <span><%= link_to "Foods List", user_foods_path(current_user) %></span>
+       <span><%= link_to "Recipe List", user_recipes_path(current_user) %></span>
+       <span><%= link_to "Public Recipes", user_public_recipes_path(current_user) %></span>
+       <span><%= link_to "Shopping List", user_shopping_list_index_path(current_user) %></span>
+       <span>
+<% else %>
+<%= link_to "Login", new_user_session_path, class: "nav-link" %>
+<%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+<% end %>
+       </span>
+ </div>
+       </nav>
+
+    <%= yield %>
+  </body>
+</html>
