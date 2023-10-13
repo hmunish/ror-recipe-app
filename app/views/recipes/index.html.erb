@@ -1,6 +1,6 @@
-<div>
+<div class="recipes-list-wrapper">
     <h2><%= current_user.email%>'s Recipes</h2>
-    <%= link_to 'create recipe', new_user_recipe_path(current_user.id)%>
+    <%= link_to 'create recipe', new_user_recipe_path(current_user.id), class: "create-recipe" %>
     <ul>
         <% @recipes.each do |recipe| %>
             <li class="recipes-list">
