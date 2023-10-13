@@ -2,80 +2,87 @@
 
 <div align="center">
 
-  <h3><b>ROR Recipe Apps
-
-</b></h3>
+  <h3><b>ROR Recipe App</b></h3>
 
 </div>
 
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 \[ROR Recipe Apps
-  \] ](#-ROR Recipe Apps)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🔭 Video Presentation](#video)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Author ](#-author-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
-  - [📝 License ](#-license-)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-# 📖 [ROR Recipe Apps]
+<!-- PROJECT DESCRIPTION -->
 
-<a name="about-project"></a>
-The ROR Recipe Apps is an application to create, store & display recipes with shopping list & food items.
+# 📖 [ROR Recipe app] <a name="about-project"></a>
+
+**[ROR Recipe app]** is a an app to create recipes & generate shopping list by including foods with user authentication.
 
 ## 🛠 Built With <a name="built-with"></a>
-
-Ruby
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
   <summary>Server</summary>
   <ul>
-    <li><a https://www.ruby-lang.org/en/>Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Database</summary>
+<summary>Database</summary>
   <ul>
-    <li><a>PostgreSQL</a></li>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
-<details>
-  <summary>Tests</summary>
-  <ul>
-    <li><a>Rspec</a></li>
-    <li><a>Capybara</a></li>
-  </ul>
-</details>
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Authorize user**
-- **Add new foods**
-- **Add shopping cart**
+- **[Create & Store foods]**
+- **[Create Recipes]**
+- **[Create Shopping List]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- N/A
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Live demo not available yet.
+
+<!-- - [Live Demo Link](https://google.com) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -85,103 +92,112 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Ruby installed and running.
-- You should be able to use IRB.
+- VS Code
+- Ruby
+- Ruby on Rails
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  cd Foods_App_Rails
-  git git@github.com:hmunish/ror-recipe-app.git
+  cd my-folder
+  git clone https://github.com/hmunish/ror-recipe-app
 ```
 
 ### Install
 
 Install this project with:
 
-```
-  cd Foods-App
-  gem install
-
+```sh
+  cd my-project
+  bundle install
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-```
-  gem install bundler
-
-```
-
-Then run:
-
-```
-bundle install
-```
-
-```
-gem bundle install
-```
-
-```
-rails db:drop
-```
-
-```
-rails db:create
-```
-
-```
-rails db:migrate
-```
-
-```
-rails s
+```sh
+  rails server
 ```
 
 ### Run tests
 
 To run tests, run the following command:
 
+```sh
+  rspec/spec
 ```
-- Run rspec spec spec/filename.rb
+
+### Deployment
+
+You can deploy this project using:
+
+```sh
+    rails server
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# <a name="authors">AJ193</a>
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Munish Halai**
+
+- GitHub: [@githubhandle](https://github.com/hmunish)
+- Twitter: [@twitterhandle](https://twitter.com/hmunish5)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/munish-halai)
+
+👤 **Benedict Makomo**
+
+- GitHub: [Benedict Makomo](https://github.com/BenM4k)
+- Twitter: [Benedict Makomo](https://twitter.com/@anamoly)
+- LinkedIn: [Benedict Makomo](https://www.linkedin.com/in/benedict-makomo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **More customized styling.**
+- [ ] **[Shoping Cart]**
+- [ ] **[Bookmark Recipe]**
+- [ ] **[Add Complex Recipes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project so please don't forget to give it a star.
+If you like this project feel free to contribute to make this project better.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank all code reviewers for making this project better.
+I would like to thank Microverse team to provide linter config for the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
