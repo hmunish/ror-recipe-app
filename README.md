@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Food_App_Rails
+  <h3><b>ROR Recipe Apps
 
 </b></h3>
 
@@ -11,8 +11,8 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Food_App_Rails
-  \] ](#-Food_App_Rails)
+- [📖 \[ROR Recipe Apps
+  \] ](#-ROR Recipe Apps)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,10 +32,10 @@
   - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
   - [📝 License ](#-license-)
 
-# 📖 [Food_App_Rails]
+# 📖 [ROR Recipe Apps]
 
 <a name="about-project"></a>
-The Food_App_Rails is a classic example of a foods website. It will be fully up and a functional website that will show the list of foods and empower users to interact with them by adding recipes,ingredients and generating shopping list.
+The ROR Recipe Apps is an application to create, store & display recipes with shopping list & food items.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,12 +67,9 @@ Ruby
 
 ### Key Features <a name="key-features"></a>
 
-- **Authenticate user**
+- **Authorize user**
 - **Add new foods**
-- **Add recipes**
-- **View recipe details**
-- **Add ingredients**
-- **Generate shopping list**
+- **Add shopping cart**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
