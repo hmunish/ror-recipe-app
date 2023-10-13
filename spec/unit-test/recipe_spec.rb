@@ -15,9 +15,9 @@ RSpec.describe Recipe, type: :model do
       expect(@recipe).not_to be_valid
     end
     it 'is not valid without description' do
-        @recipe.description = nil
-        expect(@recipe).not_to be_valid
-      end
+      @recipe.description = nil
+      expect(@recipe).not_to be_valid
+    end
     it 'is not valid without cooking time' do
       @recipe.cooking_time = nil
       expect(@recipe).not_to be_valid

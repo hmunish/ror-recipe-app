@@ -54,5 +54,4 @@ RSpec.describe 'recipe#index', type: :feature do
       end
     end
   end
-
 end
