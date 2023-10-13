@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live demo not available yet.
+Live demo not available yet.
 
 <!-- - [Live Demo Link](https://google.com) -->
 
@@ -150,11 +150,11 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/hmunish5)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/munish-halai)
 
-👤 **OMAIDU OTHNIEL**
+👤 **Benedict Makomo**
 
-- GitHub: [OMAIDU OTHNIEL](https://github.com/othniel2471)
-- Twitter: [OMAIDU OTHNIEL](https://twitter.com/@Oomaidu)
-- LinkedIn: [OMAIDU OTHNIEL](https://www.linkedin.com/in/othniel-omaidu-3350a9164)
+- GitHub: [Benedict Makomo](https://github.com/BenM4k)
+- Twitter: [Benedict Makomo](https://twitter.com/@anamoly)
+- LinkedIn: [Benedict Makomo](https://www.linkedin.com/in/benedict-makomo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
