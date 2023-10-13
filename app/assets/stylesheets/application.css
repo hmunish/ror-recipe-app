@@ -18,12 +18,13 @@ th,
 td {
   padding: 4px 8px;
 }
+
 /* Global style ends here */
 
 /* Navbar starts here */
 nav {
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .nav-container {
@@ -36,6 +37,7 @@ nav {
   text-decoration: none;
   color: #fff;
 }
+
 /* Navbar ends here */
 
 /* Foods section starts here */
@@ -43,6 +45,7 @@ table.foods-table {
   width: 50%;
   margin: auto;
 }
+
 /* Foods section ends here */
 
 .form-food {
