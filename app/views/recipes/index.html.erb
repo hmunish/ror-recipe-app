@@ -1,5 +1,6 @@
 <div>
     <h2><%= current_user.email%>'s Recipes</h2>
+    <%= link_to 'create recipe', new_user_recipe_path(current_user.id)%>
     <ul>
         <% @recipes.each do |recipe| %>
             <li>

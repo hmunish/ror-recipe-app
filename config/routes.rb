@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show] do
     resources :recipes do
       patch 'toggle'
+      resources :recipe_foods, except: %i[edit]
     end
     resources :foods
-    resources :recipe_foods, except: %i[edit]
     resources :public_recipes, only: [:index]
     resources :shopping_list, only: [:index, :show]
   end
