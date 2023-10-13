@@ -1,4 +1,4 @@
-<h1>Add ingredient</h1>
+<h1>You can Add ingredients here</h1>
 <%= form_with model: @recipe_food, url: user_recipe_foods_path(recipe_id:@recipe.id), method: :post, class:"input-form", data: { turbo: false }  do |f|%>
     <div class="form-div" >
     <%= f.hidden_field :recipe_id, value: @recipe.id %>

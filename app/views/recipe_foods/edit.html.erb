@@ -1,4 +1,4 @@
-<h2 class="heading">Edit Recipe Food</h2>
+<h2 class="heading">You can edit your recipe here</h2>
 <%= form_with url: user_recipe_recipe_food_path, method: :patch, data: { turbo: false }, local: true do |form| %>
   <% if @recipe_food.errors.any? %>
     <div id="error_explanation">
@@ -13,11 +13,11 @@
     </div>
     <% end %>
     <div class="form-div">
-  <div class="mb-3 col-sm-8">
+  <div class="mb-3 col-sm-5">
     <%= form.label :food, class:"form-label" %><br>
     <%= form.select :food_id, options_for_select(current_user.foods.collect {|food| [food.name, food.id]}, @recipe_food.food_id), { include_blank: true }, class:"form-control" %>
   </div>
-  <div class="mb-3 col-sm-8">
+  <div class="mb-3 col-sm-5">
     <%= form.label :quantity, class:"form-label" %>
     <%= form.number_field :quantity, required: true, placeholder: '1',  min: 1, class:"form-control" %>
   </div>
