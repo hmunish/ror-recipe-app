@@ -108,6 +108,7 @@ div.add-food-btn {
   text-transform: capitalize;
   color: #fff;
   border-radius: 7px;
+  margin-right: 25%;
 }
 
 .create-recipe {
