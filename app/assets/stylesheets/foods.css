@@ -1,0 +1,152 @@
+.custom-table-row {
+  border: 1px solid black;
+}
+
+.food-head th {
+  text-align: left;
+  padding-block: 1rem;
+  border-right: 1px solid black;
+}
+
+.custom-table-row td {
+  text-align: left;
+  padding: 1rem;
+  border-right: 1px solid black;
+}
+
+.foods-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foods-table {
+  width: 70rem;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+.foods-table th,
+.table td {
+  border: 1px solid #afabab;
+}
+
+.custom-table-row:nth-child(even) {
+  background-color: #afabab;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-container span {
+  border: 1px solid grey;
+  padding: 5px;
+  background-color: rgb(224, 143, 43);
+  text-decoration: none;
+}
+
+.public-recipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.public-recipe-card {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  border: 1px solid black;
+  padding-right: 10rem;
+  background-color: bisque;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.food-container-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.labelf {
+  margin-bottom: 10px;
+}
+
+.food-btn {
+  width: 30%;
+}
+
+.new-food-btn {
+  width: 55%;
+  height: 30px;
+}
+
+.name-1 {
+  margin-left: 80px;
+}
+
+.name-2 {
+  margin-left: 80px;
+}
+
+.recipe-head {
+  text-align: center;
+}
+
+.delete-food {
+  width: 60px;
+  height: 30px;
+  background-color: blanchedalmond;
+}
+
+.add-food {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(243, 240, 52);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 63rem;
+  border: 1px solid black;
+}
+
+.name-3 {
+  margin-left: 60px;
+}

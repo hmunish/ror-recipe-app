@@ -1,0 +1,19 @@
+<h1 class="recipe-head">Public Recipes</h1>
+<section class="public-recipe-container">
+<% if @public_recipes.empty? %>
+    <p>No public recipes in the collection</p>
+<% end %>
+
+<% @public_recipes. each do |recipe| %>
+<article class="public-recipe-card">
+<div class="left-content">
+<h2><%= link_to recipe.name, user_recipe_path(id: recipe.id, user_id: recipe.user.id) %></h2>
+<p>By:<%= recipe.user.name %></p>
+</div>
+<div class="right-content">
+<p>Total food items: <%= recipe.recipe_foods.count %></p>
+<p>Total price: $<%= recipe.total_price %></p>
+</div>
+</article>
+<% end %>
+</section>

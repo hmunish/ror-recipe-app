@@ -1,0 +1,22 @@
+<h1>Add ingredient</h1>
+<%= form_with model: @recipe_food, url: user_recipe_foods_path(recipe_id:@recipe.id), method: :post, class:"input-form", data: { turbo: false }  do |f|%>
+    <div class="form-div" >
+    <%= f.hidden_field :recipe_id, value: @recipe.id %>
+
+
+    <div class="mb-3 col-sm-8">
+    <%= f.label :food, class:"form-label" %><br>
+    <%= f.select :food_id, current_user.foods.collect {|food| [food.name, food.id]},{ include_blank: true} , class:"form-select" %><br>
+
+    </div>
+
+    <div class="mb-3 col-sm-8">
+    <%= f.label :quantity, class:"form-label" %><br>
+    <%= f.number_field :quantity ,  class:"form-control" , required: true, placeholder: '1',  min: 1%><br>
+    </div>
+
+    <div class="mb-3 col-sm-2">
+    <%= f.submit "Create Recipe_Food", class:"btn btn-primary form-control" %>
+    </div>
+    </div>
+<%end%>
