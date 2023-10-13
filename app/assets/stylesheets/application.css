@@ -1,15 +1,129 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+/* Global style starts here */
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px 8px;
+}
+/* Global style ends here */
+
+/* Navbar starts here */
+nav {
+  width: 100%;
+  background-color: #000000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 11px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Navbar ends here */
+
+/* Foods section starts here */
+table.foods-table {
+  width: 50%;
+  margin: auto;
+}
+/* Foods section ends here */
+
+.form-food {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label > label,
+.food-btn > p {
+  text-align: left;
+}
+
+.label > input {
+  padding: 7px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.button_to > button {
+  width: 100%;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.new-food-btn {
+  padding: 9px;
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: left;
+}
+
+div.add-food-btn {
+  display: flex;
+  justify-content: end;
+  padding: 15px 0;
+}
+
+.add-food-btn > a {
+  padding: 7px;
+  background: limegreen;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 25%;
+  border-radius: 7px;
+}
+
+.recipes-list {
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 15px;
+}
+
+.recipes-list > p {
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.recipes-list button {
+  text-transform: capitalize;
+  width: 75px;
+  height: 25px;
+}

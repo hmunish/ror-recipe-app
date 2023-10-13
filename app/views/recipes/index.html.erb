@@ -2,7 +2,7 @@
     <h2><%= current_user.email%>'s Recipes</h2>
     <ul>
         <% @recipes.each do |recipe| %>
-            <li>
+            <li class="recipes-list">
                 <%= link_to recipe.name, user_recipe_url(current_user.id, recipe.id) %>
                 <% if recipe.user_id == current_user.id%>
                     <%= button_to "delete", user_recipe_url(current_user.id, recipe.id) %>
