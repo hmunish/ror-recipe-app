@@ -1,10 +1,8 @@
 class ShoppingListController < ApplicationController
   def index
-    @foods = current_user.foods
-    @recipe_foods = current_user.recipes
-    @shopping_list = @foods.where.not(id: @recipe_foods)
+    @foods = Food.where.not(id: RecipeFood.select(:food_id))
     @sum = 0
-    @shopping_list.each do |food|
+    @foods.each do |food|
       @sum += food.price
     end
   end

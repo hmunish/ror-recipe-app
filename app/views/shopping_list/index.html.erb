@@ -1,5 +1,5 @@
 <h1>Shopping List</h1>
-<p>Amount of food items to buy <%= @shopping_list.length%></p>
+<p>Amount of food items to buy <%= @foods.length%></p>
 <p>Total value of food needed <%= @sum %>$</p>
 <table class="foods-table">
     <thead class="table-head">
@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <% @shopping_list.each do |food| %>
+        <% @foods.each do |food| %>
         <tr class="custom-table-row">
             <td class="food-names">
             <%=food.name%>
